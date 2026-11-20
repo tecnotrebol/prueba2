@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b3d2e">
+<title>TECNO TREBOL | Tienda</title>
+<link rel="icon" type="image/png" href="data:image/jpeg;base64,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FURRRFQVBVEUVRVFUVRVDUNRNFUNRNFUTRVFUNRVFUVRVEUVRVBUVQVEUVQVBURRVFUVR//aAAwDAQACAAMAAAAhAEwYYIkwI0I0MAQwgAM4gYkYckg4YIAAEk8QYYMkQI0A8AAAAA8o8E4Ykg4YYYIAo8kwQYYog8UA8AAEAA0o4UUkkwYYYYYMYIokwYcUUUUI8AU8oA0AoUUQYYYYYYYMYYIoEko4UUUo8AU8oA0AooookQYYYYcAQYYYk4cgoIoo0AU8sA8Eooo0QsQYYEkwkUYcwcgcEooo0Ac88A8UU0UYsQsYEkg8okwM4gcgYUkkUIU88A4UUQo0YkMwkgYMQIgMMwEYE4UUUIU88Ao4Yo0IwMYwkYEwsQ8MMQwM4EoYYo088AoosQIwkMwwgEo8QsMMIwwkMwcgoo088Eo0QsYwMM4wwwUwsAAQwwwkMYgcgo8A0UUYkMwgMMMc88oMU8888ssMMYwgcooEQ8Q8MYwwwEIAAAE8AAAAAAMYQwwwwE888UMMAEMc0008888AIAAMMcYoIk0MEkkgMMgA4s0INww4888AoAE8880ggcBws8s4UsoEM0wwkAAAA88AgAAww4MckQ0oY48ck9808c4AoAIsc88AAAAAAEMk4AQA8Ycc8IQk8cUw8888888AU8sss884wwwMIUU88A8wkMMIAAAQAQQM4wwAAEMM4wkY8UQ8osocwMMww08ccMIwg84wwwMMY0IkUUIQAskockMwwMMMIA0AYEMMwwsIwI0UYUIAA8UUg4EYwMMQw0I8k4MMwwMwsUYooUIAA8UUUE4EwkM4ws0AYYkIwsYsQoogo8IAA8QooYEgcwMYwYowckkYkI0YokUUo8AAA8AoooocgcgMkUYMkgoYI0IkUUUUA8oAA8AsUUkocE4EkkUAg4YYYI0UYo4UA8oAQ8A8UUUUg4YEkkkw4YYYYYYoooocA84AU8ocUI4YUEEYMokwYYYYYYEkkgo8A88Ic8AcQoookkkUYcgMQYYYYEkgYEo8A88888IUAs0YMkkwc4YAAQYYckgYEwMwE88888IQsQswYMkkgYAAAAccAg8cg8gc8AAAAAcgA8AgcAggcAAA/9oADAMBAAIAAwAAABAABTwxCxRhhhgTCwxzAyRhxQThTiASwAAABjTwhSiRBxRQDzzyixSiSBwTiAQzywAxgBTTwDAhThRQTzjyiQCwDgRygBjzjDzywwBTzjDzyBxRSgBSiSjwAAQgADxjAABTywyARCwAADhRSgBSiCjTzzAzSxCAAQwhDzwSTgjRzyhxSgBCiiwAABiSTSABzjzQwDgjjhiRAABxSAACijTxzAySSShzAQwzCijRBhgzQwzhygACixDCThiihwTgTjBiRDwCyRTyRCABigQCjywyBhhwShSiBzBggzwBwiySRAwzggwChTATRgShwDSxgwxhziATwBQgjhjSgjyiwBySSjwDwhDDyzBgwxzjABShRhggBQDTzgyhwCwBDCwwwjAQwwwxxzgBSxBxSjjhSTASgBDwwQwwxgygAQwwwBhjiAAiRzjzgQRjDiwwAwwQAQDTzzDCDDxyRSzSiwBhhCiyTChHDDjzzwBTzgAADCghyETBjyxBTyTSjTTAAAADzzxzzwwwTjxBBAwjTCSQ1zyxTwAgAixzzwCjDDDCDyCjSACzSxhCAxgADSBjDDDDDABTySSDDDTwgDiQSjyhQTSgRzjDDCzyywyQwDDDSwjShRSgQTBTiyTQDwRzjBBAhgxjDTywDyhQSTAQhiyjjCySjQDwBTzjBjByQADwBySCyRzCgjCCgQDRhijQDyARhjAyDgDwCjhhzAACgjQChzyxhxxCjQhSRDARwQShhRhgTzQhAgACjgQDBySTRChQjDzgRxBQSTBzAADxQAACihzywiSSyTQjCwwzjACySTAxzwhRSgACijgADCzRhhywjDDiAADSyRzABChRSgBCiigzywiRgBzywwCARDwiDAQywjRRTgBShQjyBDCxxwBTDzwRTxiABzjDShRQTwhyjwjgQwxDTwwATgDTzigBygSBjxRQDzzyjRChiRChDSgSAAADSgATgThxTRBgTzzyjRhhgijShTzgAAAADwBzxyCByCBwADwABxyCCDxyADwAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAACg/9oACAECAQE/AAAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAoP/aAAgBAwEBPwAAH//EAD0QAAEDAgMEBwUGBAcAAAAAAAEAAgMEEQUSIRATMVEiQVJhYoGRFSMzQHEUJDJCU4IgQ6ChJTRQcpKxwf/aAAgBAQABPwL+pZAAGYrO+3DROAtmb/rp+GO5Fwt5LhCe/wCXpoDLZrW3K9nzfpj1C9nz/pj1UtK+EXe0BP8AkG0c7mhwboe9SwyQkB+l+9D+JtDM9gcALHvU1M+ADPbVO4fw0tM+cOyAaJ1BK1pcQ2w71YLNYlZm9j+6c7N8vhbNXu5C23GZiJY42ngLqCkmmYHZPMr2dN4fVSRFjsr22Kawk24lNoJyPwgfVPop2C+W47k1uZwaOJX2Co7I9UKWYyGMN1HFSUc0TcxGncrqOlnlFw2w70aCcDgD9CtWmx2Na57srQgLCyxJ0r6/IwHqaF9gqOQ9UKWYyGMN1HFSRujkLDxHJMoZ3j8NvqnUE7RwB+hQaS/L13sgMrQOSxCKoqalrIR0Wt1KdQzxR3cA63GyLVDRyy6tbpzXs6YDg31T4y05XtsVhkeSmvzKxOXdUL7cTomOO7cSfmW6OCa8O4KFm7hY3kFjcl5o4+QusOoBK/eSatb1KSRkMZe82aFBOyoiEjOBWLaUof1hyoYBHCHkdNwv9FNVwwPayR1nO2Fn+MhoGmXOdkFRBJI+ON13DUp1spvwWFQGUb6TVoPRU08dPHnkNgo5Gyxh7DdpWL+7Mcg69Cmm4WHC0JPWTsmImxOnYDcMBedjqulhuDMwHr1VDFnvVP4vN2jkFUVUVKAZDx4WQNxdSsvi8NuBbmOxlVDJO6Fjrvbx2YfB9omfm1jYfVPeyGMvccrWqGdlRHnjNwsWFqcSji0qnbkp4x3LG5NIo/3LhCO/5qijzysHN2yufvsQk/3ZVRMyUrO/VY1JaGOPtG6w+Pd0MQ5i6xAb2Wmp+0+5+g2SH7RjfcH29Fnb2h6ql97iFVN1CzAquTdUkr+TdFgkfxZPJVsm6opXeGypotzTRx8gsbk6UUf7lTR7qmjZyasbfrFH5qL4QWGM6Uj/ACVbJuqKV3hssEj+LJ+1Vcm6pJX8mqCLfSBqaA1oaOAWJEz4k2IdVmoaCyj95iMz+w0M/wDVM/dQPf2RdYIy8ksp5WU8m6gkf2W3WGxbqhj5u6RWNSZadjO05YbHu6CPv1WI9PcQfqSf22Yo/eV7h2eipOIHL5rC4/e37LVI/dxuefyi6gBlqBzKAygDkp8Sgp5TG/NmHIL2xS+P0VNM2sxIzNvkjZYXT3ZI3PPBouog6SbNa/WVJAX66jyWGw7mjHiN1jMmWkDO05YVHkoG+I3Vd0zTw9uTX6DZUfecZydWYN2Ym/e4g8cuiho1UDctKD2tVjUmWmYztOWFR5KBvi6SxmTLSBnacsKjzTtPns9sUvj9F7YpfH6LD+lTmU/zXlyxaTJQkdo2WER5KEO7ZusUd91EY4yODU0ZWho4BYu7e1rIh1C3mU1uRgaOAFk73uLtHVFHfzK4C6zb6qL+brpxu4/MtF3ALDWWic7mVikm7oH+LorCo81UDy2QNFZi7i4XZcnyX2Gl/QZ6LDRGY5JI22DnrE5N3QP8XRWCx5aVz+05YhLuqN1uJ6IUbckbW8hZYy/NUxxjqCiZu4mM7IsviYsOUUf9yicrSTwCwob7EHSnqBPqiQ1pJ4BNO9qcx6zfZG3JG1vILGH56tsY/KFGzdxMZ2RZY1JeoYzstWER2a53dZVcm6pJX8mrCKWOYSPlYHDgLqqpqWGme/cs4aaKJm7iYzkLLG39OKPzUEe6p42dltlUe9xSmi7F3nZD95xrN1Z7+myg95NUz9p+UeSr5N3Qyu7rKH8zvmoR01SsyUzB3XWNyaRR/uWFWbK3vGymooqVznMvd3NYnVCCnLAfeP0WDuBordbXKop2VUW7fe176KONsUbY2CzQp521eJQQMN2Mdc7P8zjfdn/62UM4kxKq8XDyTmh7S08CLKlpI6RpEd9eJKxWrEUJhaem/j3BUzeLlA3NUxjv2VNK32rC65LnnMR9NlW/fYhIfFZYYeg9vXdTQtnhdE+9nclBAymi3cfBVUwqK6GlbqA7M/ZJRw1E7JnXJbp3Jzg1pc42AVHUibGHSHg8Wbsp6KKme57L3dzWIVYpoDY+8do1YfHu6GIcxdY1JaCOPtOum6QfU/NQDQlPxOdreixnoVUzTVUud7LG1tAo35Ty5L2nUMb+Fr0/F6pws1jWeSdvJX5nkknrKp5XQfDNk7Fahv8AKYe9T4hV1Ay/hHJoVGX00u8sL2tqn4tUh1mxs9CqOSSCo3mXW35gpMVqQbNjZ6FU+dk2fUEdaOJ1DPyNepMWqnizWhn0CEUkrszr68SU1oaLBAlrg5vEJ+KztGkTSvaFQarf7tubLltbRPxaqBsI2f8AEqJrt5cgpj3ROzMNinYrUN/lMcpcTq5RlHQHhCpDJTzb2wv3p+LVId0Y2HyKpa+piu3LcG56Sqa2pqeg7ot7LQom7s5vzIYnUNbwa/6p+L1JFmxtb5IiWd+Z5JJ6yjiU8cYDWM004FVVRNVuDpGWsOoJ+ga3u+aurlX2Aq55/OXPPZdX/qtf/8QALBAAAwABAgMHBQEBAQEAAAAAAAERECAhMUFRMFBhcYGxwUCR4fDxodFgcP/aAAgBAQABPyH/AM5CYnfEIQhCEIQhCE7vhCZmuaoTuqaoQhCEIQhCE1Qncs0whMTs4QmmdzwmmEIQhCEIQmmaZ3HNEITtYQmid0QmmEIQhCEITVO7oTRCEzMwnd0JqhCEIQhNM7vhCEzCEzCE0zuuE0QhCEIQhNE7xhCYmiYhCaJ3bO3hO7ZphCEIQhCE70hNEITVCfRPtF9PCEIQhNM+vX0UJ2U+lfZLK+lhCEITTO3eH2ywvopohCZhO3eHpfYLKwsLSu1hCEIT6B6Xh4fYLCwsrC7aEIQhCEITtHh5eHh9ksLC0rC7OYhCEIQhCE7F6Xh6Hl9isLCwtK7OEIQhCEJ2D0vD0vDw9SwhaFhYWVhdnCEITsHh5eiRb0Q0018I8u0ua6Dw8PD1IQhCwsrCwsrCwu3eHpeHli166qOuk95VFxPMoPDw+wWFhYWUI0Td98efyQnrjcW6ZKaSSFpQha3wNnCVbRCNblxaLHiQyVUMhU5I8jwx2Mc1ZHCKx4CLa5PkbtBzb+iHhjHl6VhYWFhC3I9IL++mZ6Kv6/wUaqukNK2T+CDcwaWibOCXMuvUh7ZVddGIG5Ej+ROu412XqOCbXi2sF1m4m89hfLwYO1LTXFM4iWw60tlwELTglEJ6Bcns2/6Ja+KUcddsvUgW/OFJt+OFYiiRLT7D6i0PBIh9PihxV/qJCCbmoprbiIaX1NkO4m+CD3AcmhDOr+37RjDRqX98qPtz5LDw8vLHoQsLCwsIdMPgmWYex1lTfMgz47ev8La2T28WTeXdjEXwt1Gbbky9Gccfl5OhyfoSVwqY+0P+zFXVez49SnQNxrjAR82OHL/myCw1MRI3E/H6G8LhxF017NYQEjp+iwwpCoqd9CrfPeIh9tXEStiEJwe6NsF/geftiaEbJt98OZ5E+Asklu+gq2LnCEaKVPxTNtY5q8Tab6t7L5OH6qMehjwxj0IWFhYQhCPWE8ljaXDY9NiOm6V6jknNb0/pbONPruczlL/TxwpSb2m7pxezGviaEG9X5cfYjLjZ6uCN5/gvu/g6h0nm9vkUoUnfPn/pZV8E29l7M6jqT8+Zt7km/svkV+ieQElOsdJ5vb5N566J7v4NyI2Tz4I3warS28RKMREvA6TT83/REhOCPCy/13fB45v+BvLiX57/AAeMonmK2Gz9z8Qgr3s/Jf1Ei+K36/gWekXyccTzdIk/fNm1Hgkwxjy8PD0rCwsIQhFv1G/1iODGt6HNBl9WKS8EiOBULuYtDvAZzb/ovjAN6DlRt4IZJkpIKR5sf2+CBPdX2W//AApebn9vg8qzT1Hjb8S+gXH5xEOEp++dFkuiOqDMQV729F+opebtv3yRBnur7Lf/AIWRbJv7PzhobWG7Rt/Q7F7HW9fz+DYDdvx+BnK+/e/AnhwSQzdLRHifwVwMkPEy/wAHsNpjbJbsplzvmWHjhjHhjGPD0IWFhYWEeIDPKf8AscQ7wn75UpXBr9v1Y3ZV0+jh8ERIEPokpsuHubR4wnr+KUNb/wCS/WMZSzR1p4Lwdvrfni3+EIW8E/Yh7TqPU/4L4CKx/E/qP9MeFEVsY7jPcfCI8GZDt+R28X+oUt4J+wl72t6v+I8AE+TOoDJ58hBhNe4+CG5qI5nshCxRLF0+Sbrz2XszwhG8zwgnwvbG74kb08HssdVqp4DqU5+u3yLPAQxjGPDHhjHpQhYWFhFK6I6n7nrubTfVvZfI6Z87CcX4zexdDbbMLoubIvxCfubcfENGT4GJG8irXBtb/H+4Xnp/n+cWp7t61sOMYmK/brO7NqpSP03N/wBBFL4b/thla5rgki/5jnQnPyW3wJ6YjOsguYXEOXa+LY8+HDw3mOFWZJ7o+fqIwJVt8kbIDFv89sX88ZvwXRCO2CHydbKfXclj3+wX9EKeHpeHh6VhYWELHqCCfe+E/MIUxBMShz7Y63QgTz+zLAnVO3/pQ44uKTXVzXU2fwqUoT67SpGW0Rbi2NdfzDQitmVYNrJTj+YVROOoJuG9Ux08ZNb/ANHFu5eJYh8JDco+oQvE3uRLVhWFfMo3U4/kHpTnWhNmDkI6qj0lM61+5MNs1zksm6/mKsr2yaje/uLYfdHmNQ3knIQpP5GWwetNjrxxC8H2IvzHA8JJ8PJgeHh4Yxjw9KwsLCymXBs8RldXhi4NlObKb6lKLTtoiIumh6KNjw+oK+o26srqxseHh4Yxjw9KwsLKwsLSsLK03TdT1vLw8PDw+wWVhYWFhZXZ0pSlKXF7B6Xh5eHh4fYrCwtayuwpSlKUpezeXh4eXh4etYWFpWFldjcUpSlKXF+geHh5eta19DSlKUpS9q8PS8PtVhaV2l0UpSlze3et9ita+gpSlLilL9E8PtFlfQ0vaXtXrfZr6WlLppS/TP629hdd+ifar6Ol10pS943VSlKUpfpX3Be1pe7qXRSlKUpSlKXRe76XRc3TS6b3RdVKUpSlKUpdN7spddKXVS910umlKXFKXFKUum91Uv0NL3VdNKUuLi5pSlLoum9wXTS6aUpSlLi6KXTe5LqpSlLm4pSlKXTS9z0vYUpSlKXVe7aUuaXN00pe86UpSlKX/wCN/wD/xAAoEAEBAQABAgUEAgMBAAAAAAABABEQITEgUWGRoUFxgbEwwdHh8PH/2gAIAQEAAT8Q8AQQQQQQQWWQQWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWSSSSSSSSSSSSfwBBBBBBBBBBBBZZZZZZZZZZZZZZyZwyyyyyyyyyyyyyyyySSSSSSSSSSTxBBBBBBBBBBBZZZZBBZZZZZZ/MAAyyyyyyySSSSSSSSSSSSSSSTwBBBBBBBBBBBBBZBBZZBBEODLOGWWWWWcMssss4MSSyyySSSSSSSSSSSSSSSTgIIIIIIIIIIIIIILIIIIgWWWWfygAZZZZJMYkkkkkkkkkkkkkkkkklkEEEEEEEEEEEEEEEEEQIIII5GcMsssssssss5GZJJJMSSSSSSSSSSSSSSSSSyCCCCCCCCCCCCCCCCCCCCITLLLP5AAZZZJMSSSSYkkkkkkkkkkkkkklkEEEEEEEEEEEEEEEEEEQIIIhwZZZZZZZZZZZZyMSSSYkkkkkkkkkkkkkkkkklkEEEEEEEEEEEEEEEEEEEEQmWWWfxgBllkkkxJJJJJJJJJJJJJJJJJJJLIIIIIIIIIIIIIIIIIIIIIIIII4Mss8AyzhlnBiSSSSSSSSSSSSSSSSSSSSSSWQQQQQQQQQQQQQQQQQQQQQRCBZZZZ/CAZZZJMSSSSSSSSSSSSSSSSSSSSSyCCCCCCCCCCCCCCCCCCCCCCCCPAGWeAZZyMSSSSYkkkkkkkkkkkkkkkkkklkEEEEEEEEEEEEEEEEEEEEEEQmWWfxADLJJiSSSSSSSSSSSSSSSSSSSSScEEEEEEEEEEEEEEEEEEEEEEEEEcjOGWWcM5GJJJMSSSSSSSSSSSSSSSSSSSTgIIggggggggggggggggggggiBZZZZZZZZZZZZZMYkkkkkkkkkkkkkkkkkkkkklkEEQQQQQQQQQQQQQQQQQQRAggsj+IAMkkkkkkkkkkkkkkkkkkkkkkmZkiIIIIIIIIIIIIIIIIIIIIIIIhMss8AyyyySYxJJJJJJJJJJJJJJJJISTJMnBEEQQggggggggggggggggggggss/gAZZJJMSSSSSSSSSSSSSSSSSSSSZ4IggggghBBBBBBBBBBBBBBBBBEJlllllllkkxJJJJJJJJJJJJJJJJJJJISTJPBEQQgghBBBBBBBBBBBBBBBBBBBZ4wMkkkmJJJJJJJJJJJJJJCSEkkkzPBEQQQQghBBBBBBBBBBBBBBBBBECyzwDLJjEkkkkkkkkkkkkkhJCSSSSEzPBEQgghBCCEEEEEIIIIIIIIIIIII8QCSSSSSSSSSSSSSSQkkkkhJCSEzPBEQiEEIghBCCCCCCCCCCCCCCIQ8QDGJJJJJJJJJJJCSEkkJISQmSSZ4IjgcCEQQQQghBBBBBBBBBBECIeEDGMYkkkkkkkkJJJJISQmSSEzwZ4IiI4HAhEIggghBBBBBBBBBBEPCBjGJJJJJJJCSSSSEkJmZ4PB4Mz3iOByERwOBCIhBCCCCCCCCCCCPADEkkkkkkhJCSSEyTL8jc89u0Gb0fSPjVzz3B4PB4MzEeIBwI4HAhEEIIQQgggggs8SSSQkhJJJJCeDPBOvBD0a7CKPvDzIfT8x+zrweDwZmeCOBwOBwI4BB9zg6fdv+w/u/6n+7SzaNDm9j7RJDprhwIIIIQhBB4VifIgtI3Q0TTpsQESAOj8Nt1VZJIQks8Z5g49oNk0Aq53/dg6Q1Z4PDUiDWWbufpgtVvjoBrIGvtQSguq+ySXQ77PbIe4A6B2OD4AzweCOBwOBwOBUB3ekeD0cffq/p789mLCDusP295dgN6Id8t7/i36P3HyZHhXXE7+p9EmDhg9fwhWe9gx9jW6oQFBZ9u/xa0j+cVwv+M/uFg4ZHrmm9n4uv0Xo55p3shOryhDOoHy/berOGB6n5y2l/B4jCATtDh1VE0/XyiHwweQXWiWuerdFM74/ERFkOr3JuGDYeuab2dmVJYESNQcPeAZN2xXt3PaYZPqmz7OSWIMGInMSIHCfaDLJrSIbamvdw6CC6g9LebnRyRID0fWAtX1fZXv8Ai2yfTPyBId77EkAzvB8x0/c2M9/u6/CBpc630f8Akng8GeDPIzHIcDgcDgMagUJUB6N0tf7J6sdX327Iho83n6+ce6aD6H6gv1D6n10iL62H4APPcJq1kdIRxEiHcMU7g6fA/ixfAwdUNB/f+rYizdQLgudjeBNi6Lplp8hfnjQu5FiuFMY44e0A+8z7c6wKoiu13XzD6eu+UDEUDiqdgDu3auHk0+zE96QzrgFfc6/EGpqAPoyW0zm9cAPnZQNehdVVixr+hD340OD1BO+mnbqdXo6KsfVT6+Wes7YToQd3PI0kd0xPMZwaAOdnee7H443ecg8Yg52OKSCImj3Ji+jp7rXPsw1/3aKq4dB2AD8AE2dTSkJ3EYurAo+q098fe0XAyfRGvytn3Il+3+SJ9HWf/e3IzPI+AMxyHA4HhDbjQkfkfgeEStA9Az+4sHQivW7j4ydd0EeRzr+fhMOz3tR8JBg6PpDr7j7ODD9+Oh2X5fcuxH7iagKAdMHa/cP5k6wMeT/sSZI6A/z7wyBwI+XRfItDAR9fVe5uyYd89f8Ag87SDA37P7bGsdQ/3T9ENt3Tlig7g+7r+ixBwI+XRfIvLoNhmuEPyZ+xJc0ealWEJgc30BgTIqdA7C6vw9oQcAA8gs90UfouvY6IWU6Pv1RIe9oQpC+qtfp7wbuPqQDh75AXQhvN6xjpuYLzHr8+xYYxnrbU/SIzqjP/AA+pw6f8nc1+Sz2A/wDnxPgDPB4PB4I4HA4HhDBR0Z3y6H6Z8EUwX+ranXT5pn7YScIXoGSSsVnBoJ13yS9D2f8ANgiXoju1z7Y/F8OhQV/U5NZSPV/23m8hM+8BFUZM79HwLp4DJ5gr5m8mfmZx8C6d6+rH+p46X63H2X58WQ77POvygh9o34xL74fAXTA0DzHX5ZvZn5scPgunIInmGvmdWBT9hh8jjQjxzQY/N6Hs/wCYIgaj3Fg9hYg4a883Xxj828Y9TYOf7fm2x0N+vX/APzHDg15AYS34d9w/UOXAD0DD9Xmdz6J0e4fxOiCUfoF1B63v01Z6zrPtPgD4QeDwchwOBwOHpQDbaY4PsP8AK2aMP+Y6/CEc3qflhf3wJA3WYdAsSKgHVWGO4yH/ALF1mz3g6/CdEBQPmOHyzZ4dHuWJ7bARn0T0Mt0+zPxvb3LEHH59cD+pHdF/Zmjb4tvIDWGTVb62fqN1x+WA1vlvnVf2xXJq9AIBu3splufhY8/f1MwcHn1wH9XV00TyXr8QDxiF93f0Fgzgb8kZ8kh6y40HF/aOTYjR26H5SOthB6Eu66OfXX/B53QnH7EBr77M0tKPX/Ye/HWvRp9HHwI92JHgn3E9rOHE+Zv/ALvxYfSz7v8A54gPI+APBHgBwOBwy/oZ/q2IxH7n+yz7kS/8ecc0Epvm9T4OOnKAVabjA6dvYhkaRPV+i+XTQ9X0bfZgv3wPz8W5cICBN8xPq/S7yA9v5fVetoMHsz6zzARvq47r9cl+n9+MhcnU929H4xtC+gLjiY/u2qQCOHY6AYa/T6xk3ELqvdfhnksy86HW/f8AUXUCKPM6v64X2nN1wzp2ejjI3qh9kvtq60HQPomf1N4CBLBiIn5CN6Ql1XdXz7e0UtcLRd+yDvqn1OO0E4dHcGdc19fvI4E9gBqsviDujADH3T3vHXX8AdnegHTc772I3O8b1N6P2n7y3Uz7+2j4Q/F00FI8x/yPa6x9fgP/ADg8GZng8HgzEcDgcDkLJ53A/H/tmikATD8XJshMBX6r9V+tmA8AXFHa6BIOqFfXo4+0wcOmR/bWfEX3Gs1TmFmN1PvPrDK8kc/k2RKXoU/cquem5dJexuNzr0THp8slGw7vr+K2wpiapqYnX/d9G9Vuvo9MJoy4R3t/bCemHVz8nHH8FqDTPlHR8WsJoSp+eqwG4WFirB83GYm8wDpfsMbYQ7Va0Ore/XfrMRIdK9fSmc4Okav/ALJdFjnUTyT6lqj9IMv5NbpMEcTPuVPxkZcBQvd3eiY/fzsLyHd9fxRDsnVMoHyVuesv6s6oDyadX3z0mrwO7dfXvnYBgxw+6OPtPHbpkr7a58Tk46vr+Dy9DpOTwEgAZ2PKR2Uxr1Or1Xr/AIj6Fb9/+ODweD4QeDwRwOBwOBEVgj0Y/wB1D/5ouxr7OX1ifdiGF2XvCe6sLzZMMMMY9zYPIe3gU7g/i9B7WHkWB9CWwzhLLK85HuvvKVHS/wBonbdb57f7JP8AtpF1VfXg8Hg+EHg8EcDgcCOBwOBEMShlDDKGGGGJtvGzFlllllLLLLLMpZ4PB4PB4MzPBHAjgcDgShlDDKGGGGGGGGGGIeEDFmLLLLLLLKWWWWUymeDweDwZnvEREcDgSiIYYYZQwyhhhhhhhiHhAxiyyyyyyyyyylllLKWUzKZTwZ4IjgSiUMMMMoZQwyhhhhhhhhiD4wGLMWWWWWWWWWWWWWWZSymUzwZ4IiUQwwwwyhhhhhhhhhhhhhhhhiHhAxiyyyyyyyyyyyyllLLLLKWUyzM8ERDDDKGUMMMMoYYYYYYYYYYYg22+IGyzFllllllllllllllLLLLLMpmeCIhlDDDDDDKGGGGGGGGGGGGGGGPCDeRiyyyyyyyyyyyyyyyyyllLLLMzwREMoYZQwwwwwwwwwwwwwwwxCDbbbbbbbbbLMWWWWWWWWWWWWUsssssspZmeCIhhlDDDDDDDDDDDDDDDDDDDDHI2223wBZZZZZZZZZZZZZZZZZZZZZSzM8EQxDDDDDDDDDDDDDDDDDDDEGG22223httttssxZZZZZZZZZZZZZZZZZSyyzPBEMMMMoYYYYYYYYYYYYYYYYYY4Nttttt8AYssssssssssssssssssssssszbDEMMMMMMMMMMMMMMMMMMMMQYbbbf4AG2yyyyyyyyyyyyyyyyyyylllllmYYhhhhhhhhhhhhhhhhhhhhhhiDbbbbbbbbbbbMYsssssssssssssssssssyyy2wwwwwwwwwwwwwwwwwwwwwxCDbb/ACAA2WWYsssssssssssssssssssstsMMMMMMMMMMMMMMMMMMMMMMMMcG228Nt4bbbbMYssssxZZZZZZZZZZZZZZZZZbYYYYYYYYYYYYYYYYYYYYYgww22/yAA222WYssssssssssssssssssstsMMMMMMMMMMMMMMMMMMMMMMQm22222+AbbbbbMYssssssssssssssssssssstsMMMMMMMMMMMMMMMMMMMQg222+EN8A3whssssxZZZZZZZZZZZZZZZZZZbYYYYYYYYYYYYYYYYYYYYYYhBtttttttttttttttmMWWWWWWWWWWWWWWWWWWWWW2GGGGGGGGGGGGGGGGGGGIMNsPhDeG8Nt8QNllmLLLLMWWWWWWWWWWWWWW2GGGGGGGGGGGGGGGGIMMMMQm222/wAN4bbbMYssssxZZZZZZZZZZZZZZZbYYYYYYYYYYYYYYYYYYYgww22+IG28N8QGbbbLMYsssssssssssssssstsMMMMMMMMMMMMMMMNsMMMQm222222/wANtttlmLLLbLLbLLLLLLLLLLLLLyMMMMMMMMMMMMMNsMNttttscjbeTbeG222+AbbbbbLLLLLLLLLLLLLLLL4Rhhhhhhhhhhhhttthtttttttt/hANtttttttttttlllllllllllll8Ywwwwwww2www222222222222222222222222222222222yyyyyyyyyyy/wkREREeAf4dt523nbfBv8LwzM8MzM+L/2Q==">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database-compat.js"></script>
+
+<style>
+:root{
+  --ink:#14231c;
+  --muted:#66766d;
+  --paper:#f4f6f5;
+  --card:#ffffff;
+  --line:#e3e9e5;
+  --brand:#0f7a55;
+  --brand-dark:#0b3d2e;
+  --soft:#e7f4ed;
+  --wa:#1ebe5d;
+  --wa-dark:#15a04c;
+  --radius:16px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+  --head:'Bricolage Grotesque','Figtree',system-ui,sans-serif;
+  --body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.45;
+  padding-bottom:var(--safe-b);-webkit-text-size-adjust:100%}
+button,input{font-family:inherit}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 12px}
+
+/* Franja superior */
+.strip{background:var(--brand-dark);color:#d6efe3;font-size:.78rem;font-weight:600;
+  text-align:center;padding:calc(7px + var(--safe-t)) 12px 7px}
+.strip a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+
+/* Cabecera */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .2s ease}
+header.raised{box-shadow:0 8px 24px rgba(20,35,28,.08)}
+.head-row{display:flex;align-items:center;gap:12px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;flex:none}
+.brand svg{width:30px;height:30px;fill:var(--brand)}
+.brand b{font-family:var(--head);font-weight:800;font-size:1.15rem;color:var(--brand-dark);letter-spacing:.01em;line-height:1}
+.search{flex:1;min-width:0;display:flex;align-items:center;gap:9px;background:var(--paper);
+  border:1px solid var(--line);border-radius:12px;padding:0 12px;height:42px}
+.search i{color:var(--muted);font-size:.9rem}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:16px;height:100%}
+.search .clear{display:none;border:0;background:#dfe7e2;color:var(--muted);width:24px;height:24px;border-radius:50%;cursor:pointer;font-size:.72rem}
+.search.has-text .clear{display:block}
+.head-btn{flex:none;display:none;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;
+  font-weight:700;font-size:.88rem;padding:0 16px;height:42px;border-radius:12px}
+@media(min-width:720px){.head-btn{display:inline-flex}}
+@media(max-width:380px){.brand b{display:none}}
+
+
+/* Banner */
+.hero{margin-top:14px;border-radius:24px;overflow:hidden;color:#fff;position:relative;box-shadow:0 14px 30px rgba(11,61,46,.18);
+  background:radial-gradient(120% 140% at 100% 0%,#1fa971 0%,rgba(31,169,113,0) 55%),linear-gradient(135deg,#0b3d2e,#0f7a55);
+  padding:26px 20px 62px}
+.hero h1{font-family:var(--head);font-weight:800;font-size:1.75rem;line-height:1.08;max-width:14ch;letter-spacing:-.015em}
+.hero p{margin-top:8px;color:#d6efe3;font-size:.95rem;max-width:34ch}
+.hero .acts{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.hero .acts a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.9rem;
+  padding:11px 16px;border-radius:12px}
+.hero .a1{background:#fff;color:var(--brand-dark)}
+.hero .a2{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.hero .leaf{position:absolute;right:-26px;bottom:-30px;width:150px;height:150px;fill:rgba(255,255,255,.1)}
+@media(min-width:720px){.hero{padding:40px 36px 84px}.hero h1{font-size:2.3rem}.hero .leaf{width:240px;height:240px;right:20px}}
+
+
+/* Tarjetas de categoría */
+.catcards{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:-40px 8px 0}
+@media(min-width:720px){.catcards{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:-56px 28px 0}}
+.catcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px 10px 10px;text-align:left;cursor:pointer;
+  box-shadow:0 10px 24px rgba(20,35,28,.1);display:flex;flex-direction:column;gap:8px;transition:transform .15s ease,box-shadow .15s ease;color:var(--ink)}
+.catcard:active{transform:scale(.98)}
+@media(hover:hover){.catcard:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(20,35,28,.14)}}
+.catcard.on{box-shadow:0 0 0 3px var(--brand),0 10px 24px rgba(20,35,28,.1)}
+.catcard span{font-family:var(--head);font-weight:800;font-size:.98rem;line-height:1.15;padding:2px 2px 0;min-height:2.3em;display:flex;align-items:center}
+.catcard .tile{aspect-ratio:1/1;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.catcard .tile i{font-size:2.6rem;color:rgba(20,35,28,.55)}
+.catcard .tile img{width:100%;height:100%;object-fit:contain;padding:8px;mix-blend-mode:multiply}
+.todos{display:none;border:0;background:var(--soft);color:var(--brand);font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;cursor:pointer;margin-top:4px}
+.todos.show{display:inline-block}
+
+
+/* Promociones */
+.promos{margin-top:28px}
+.promos[hidden]{display:none}
+.promos h2{font-family:var(--head);font-size:1.3rem;font-weight:800;padding:0 2px 12px}
+.pwrap{position:relative}
+.ptrack{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+  margin:0 -12px;padding:0 12px 4px;scroll-padding-left:12px;-webkit-overflow-scrolling:touch}
+.ptrack::-webkit-scrollbar{display:none}
+.pslide{flex:none;width:86%;aspect-ratio:1.55;border-radius:22px;overflow:hidden;position:relative;scroll-snap-align:start;
+  color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:center;padding:26px 22px 20px;background:var(--g,linear-gradient(135deg,#0b3d2e,#0f7a55))}
+.pslide::before{content:"";position:absolute;right:-60px;bottom:-70px;width:230px;height:230px;border-radius:50%;background:rgba(255,255,255,.14)}
+.pslide::after{content:"";position:absolute;right:50px;top:-50px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.1)}
+.pslide>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.pslide>*:not(img){position:relative;z-index:1}
+.pbadge{position:absolute!important;top:0;left:50%;transform:translateX(-50%);background:#16a34a;color:#fff;font-weight:800;font-size:.8rem;
+  padding:6px 14px 8px;border-radius:0 0 14px 14px;display:flex;gap:7px;align-items:center;white-space:nowrap;z-index:3!important}
+.pk{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.92}
+.pt{font-family:var(--head);font-weight:800;font-size:clamp(1.5rem,7vw,2.2rem);line-height:1.02;margin:6px 0 14px;text-transform:uppercase;max-width:13ch;letter-spacing:-.01em}
+.pbtn{align-self:flex-start;background:#fff;color:var(--ink);font-weight:700;font-size:.85rem;padding:9px 15px;border-radius:12px;display:inline-flex;gap:7px;align-items:center}
+.parrow{display:none;position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand-dark);box-shadow:0 6px 16px rgba(20,35,28,.15);cursor:pointer;z-index:4;
+  align-items:center;justify-content:center}
+.parrow.l{left:-10px}.parrow.r{right:-10px}
+.pdots{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.pdots i{width:7px;height:7px;border-radius:4px;background:#cdd8d2;transition:width .2s,background .2s}
+.pdots i.on{background:var(--brand);width:20px}
+@media(min-width:720px){
+  .ptrack{margin:0;padding:0 0 4px;scroll-padding-left:0}
+  .pslide{width:calc(50% - 6px);padding:32px 30px 26px}
+}
+@media(hover:hover) and (min-width:720px){.parrow{display:flex}}
+
+
+/* Descubre (mosaico) */
+.descubre{margin-top:28px}
+.descubre[hidden]{display:none}
+.descubre h2{font-family:var(--head);font-size:1.3rem;font-weight:800;padding:0 2px 12px}
+.mosaic{display:grid;gap:8px;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:1fr 1fr .95fr;
+  aspect-ratio:1.77;container-type:inline-size}
+.dt{position:relative;overflow:hidden;border-radius:16px;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:4cqw 4cqw 3.6cqw;text-decoration:none;color:var(--tc,#fff);background:var(--g,linear-gradient(135deg,#0b3d2e,#0f7a55));
+  transition:transform .15s ease,box-shadow .15s ease;min-width:0}
+.dt:active{transform:scale(.985)}
+@media(hover:hover){.dt:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(20,35,28,.18)}}
+.dt::before{content:"";position:absolute;right:-12cqw;top:-12cqw;width:34cqw;height:34cqw;border-radius:50%;background:rgba(255,255,255,.16)}
+.dt::after{content:"";position:absolute;left:-8cqw;bottom:-16cqw;width:28cqw;height:28cqw;border-radius:50%;background:rgba(255,255,255,.1)}
+.dt>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dt>span{position:relative;z-index:1}
+.dk{font-size:2.3cqw;font-size:max(.58rem,2.3cqw);font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.92}
+.dtt{font-family:var(--head);font-weight:800;line-height:1.05;letter-spacing:-.01em;font-size:4.4cqw;font-size:max(.8rem,4.4cqw);margin-top:2px}
+.dt-0{grid-column:1/3;grid-row:1/3;justify-content:flex-start;padding-top:5cqw}
+.dt-0 .dtt{font-size:6.2cqw;font-size:max(1.1rem,6.2cqw);max-width:12ch;text-transform:uppercase}
+.dt-1{grid-column:3;grid-row:1/3}
+.dt-1 .dtt{font-size:4.6cqw}
+.dt-2{grid-column:4;grid-row:1}
+.dt-3{grid-column:4;grid-row:2}
+.dt-2 .dtt,.dt-3 .dtt{font-size:3.6cqw;font-size:max(.72rem,3.6cqw)}
+.dt-2 .dk,.dt-3 .dk{display:none}
+.dt-4{grid-column:1/5;grid-row:3;justify-content:center}
+.dt-4 .dtt{font-size:4.2cqw;font-size:max(.85rem,4.2cqw);max-width:22ch}
+.mosaic.simple{aspect-ratio:auto;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none}
+.mosaic.simple .dt{grid-column:auto;grid-row:auto;aspect-ratio:1.5;justify-content:flex-end}
+.mosaic.simple .dtt{font-size:max(.95rem,5.2cqw)}
+.grid>.descubre{grid-column:1/-1;margin:14px 0 8px}
+@media(min-width:720px){
+  .mosaic{aspect-ratio:2.15;gap:12px}
+  .dt{border-radius:20px}
+}
+
+/* Accesos */
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+.quick a{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 4px;
+  font-size:.78rem;font-weight:700;color:var(--ink)}
+.quick i{width:38px;height:38px;border-radius:50%;background:var(--soft);color:var(--brand);
+  display:flex;align-items:center;justify-content:center;font-size:1rem}
+.quick a:active{background:var(--soft)}
+
+/* Productos */
+.top-line{scroll-margin-top:70px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:24px 2px 12px}
+.top-line h2{font-family:var(--head);font-size:1.3rem;font-weight:800}
+.top-line small{color:var(--muted);font-size:.82rem;font-weight:500;display:block}
+.top-line .l{min-width:0}
+.sort{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%2366766d' stroke-width='2' stroke-linecap='round'/></svg>") no-repeat right 12px center;color:var(--ink);font-weight:600;font-size:.85rem;padding:9px 32px 9px 14px;border-radius:12px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+@media(min-width:1180px){.grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;cursor:pointer;position:relative;transition:box-shadow .15s ease,transform .15s ease}
+.card:active{transform:scale(.985)}
+@media(hover:hover){.card:hover{box-shadow:0 10px 26px rgba(20,35,28,.1)}}
+.badge{position:absolute;top:8px;left:8px;z-index:2;background:#e5484d;color:#fff;font-size:.7rem;font-weight:700;
+  padding:3px 9px;border-radius:999px}
+.card .pic{aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center;padding:10px 10px 4px;margin:8px 8px 0;border-radius:12px;background:#f6f8f7}
+.card .pic img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.card .info{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
+.marca{font-size:.74rem;font-weight:700;color:var(--brand);min-height:1em}
+.card h3{font-size:.9rem;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.price{font-family:var(--head);font-weight:800;font-size:1.35rem;color:var(--brand-dark);margin:6px 0 10px;letter-spacing:-.01em}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:7px;background:var(--wa);color:#fff;text-decoration:none;
+  font-weight:700;font-size:.88rem;padding:11px 10px;border-radius:12px;border:0;cursor:pointer;width:100%;margin-top:auto}
+.btn-wa:active{background:var(--wa-dark)}
+.card .btn-wa{background:var(--soft);color:#0b6b46;box-shadow:inset 0 0 0 1px #c9e8d9;transition:background .15s,color .15s}
+.card .btn-wa:active{background:var(--wa);color:#fff}
+@media(hover:hover){.card .btn-wa:hover{background:var(--wa);color:#fff}}
+.btn-wa i{font-size:1.05rem}
+
+.skel{height:300px;border-radius:var(--radius);
+  background:linear-gradient(100deg,#e6ece8 30%,#f3f6f4 50%,#e6ece8 70%);background-size:200% 100%;animation:sh 1.3s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.empty{grid-column:1/-1;text-align:center;padding:48px 20px;color:var(--muted)}
+.empty i{font-size:2rem;color:#a9b8b0;margin-bottom:12px;display:block}
+.empty b{display:block;color:var(--ink);font-size:1.05rem;margin-bottom:4px}
+
+/* Pie */
+footer{margin-top:34px;background:var(--brand-dark);color:#cfe6da;padding:28px 0 8px}
+.foot{display:grid;gap:20px}
+@media(min-width:720px){.foot{grid-template-columns:1.4fr 1fr 1fr}}
+footer .brand b{color:#fff}
+footer .brand svg{fill:#7fe3b4}
+footer p{font-size:.88rem;margin-top:10px;max-width:34ch}
+footer h4{font-family:var(--head);color:#fff;font-size:.95rem;margin-bottom:8px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer li a{text-decoration:none;font-size:.9rem;display:inline-flex;align-items:center;gap:8px}
+footer li i{color:#7fe3b4;width:16px;text-align:center}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:22px;padding:14px 0;font-size:.78rem;text-align:center;color:#9cc2b0}
+
+
+/* Detalle */
+#modalDetalle{position:fixed;inset:0;z-index:100;background:rgba(10,24,18,.55);display:none;align-items:flex-end;justify-content:center}
+#modalDetalle.open{display:flex;animation:fade .2s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+#modalBox{background:#fff;width:100%;max-width:520px;max-height:92vh;max-height:92dvh;overflow-y:auto;
+  border-radius:26px 26px 0 0;padding:10px 18px calc(18px + var(--safe-b));animation:up .28s cubic-bezier(.2,.8,.2,1);position:relative}
+@keyframes up{from{transform:translateY(100%)}to{transform:none}}
+@media(min-width:640px){#modalDetalle{align-items:center}#modalBox{border-radius:26px;max-height:88vh}}
+.grab{width:42px;height:5px;border-radius:3px;background:#d3dcd6;margin:0 auto 10px}
+.x{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;border:0;background:#eef2ef;color:var(--ink);font-size:1rem;cursor:pointer}
+#mFoto{width:100%;height:min(62vw,300px);object-fit:contain;background:#f6f8f7;border-radius:16px;padding:10px;display:block;margin:6px 0 14px}
+#mMarca{font-size:.8rem;font-weight:700;color:var(--brand)}
+#mNombre{font-family:var(--head);font-size:1.3rem;font-weight:800;line-height:1.25;padding-right:40px}
+#mDesc{color:var(--muted);font-size:.95rem;margin-top:8px;white-space:pre-line}
+#mPrecio{font-family:var(--head);font-size:1.9rem;font-weight:800;margin:14px 0}
+#mBtnWhatsapp{padding:15px;font-size:1rem;border-radius:14px;position:sticky;bottom:0;box-shadow:0 -10px 16px #fff}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:3px solid #7fe3b4;outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="strip">Consulta el delivery y los precios por <a href="https://wa.me/584244649564" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<header>
+  <div class="wrap">
+    <div class="head-row">
+      <a class="brand" href="#" aria-label="Tecno Trebol, inicio"><svg viewBox="0 0 24 24" aria-hidden="true">
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6"/>
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(90 12 12)"/>
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(180 12 12)"/>
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(270 12 12)"/>
+        <path d="M12 13 L14.5 22.5 L13 22.5 L11 14Z"/>
+      </svg><b>TECNO TREBOL</b></a>
+      <label class="search" id="searchBox">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input type="search" id="busquedaInput" placeholder="¿Qué buscas hoy?" autocomplete="off" enterkeyhint="search" aria-label="Buscar producto">
+        <button type="button" class="clear" id="btnLimpiar" aria-label="Borrar búsqueda"><i class="fas fa-times"></i></button>
+      </label>
+      <a class="head-btn" href="https://wa.me/584244649564" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>Chat</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Tecnología para tu día a día</h1>
+    <p>Mira el catálogo y escríbenos para confirmar disponibilidad y precio.</p>
+    <div class="acts">
+      <a class="a1" href="#catalogo"><i class="fas fa-th-large"></i>Ver productos</a>
+      <a class="a2" href="https://wa.me/584244649564" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>Hablar con la tienda</a>
+    </div>
+    <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true">
+      <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6"/><ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(90 12 12)"/>
+      <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(180 12 12)"/><ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(270 12 12)"/>
+    </svg>
+  </section>
+
+  <section class="catcards" id="catcards" aria-label="Categorías"></section>
+
+  <nav class="quick" aria-label="Accesos rápidos">
+    <a href="https://wa.me/584244649564" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>Chat</a>
+    <a href="https://wa.me/584244649564?text=Hola%20Tecno%20Trebol%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20delivery" target="_blank" rel="noopener"><i class="fas fa-truck"></i>Delivery</a>
+    <a href="https://maps.google.com/?cid=6273201830718904491&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i>Tienda</a>
+    <a href="https://beacons.ai/tecnotrebol" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Redes</a>
+  </nav>
+
+  <section class="promos" id="promos" hidden>
+    <h2>Promo Tecno Trebol</h2>
+    <div class="pwrap">
+      <button type="button" class="parrow l" id="pPrev" aria-label="Anterior"><i class="fas fa-arrow-left"></i></button>
+      <div class="ptrack" id="pTrack"></div>
+      <button type="button" class="parrow r" id="pNext" aria-label="Siguiente"><i class="fas fa-arrow-right"></i></button>
+    </div>
+    <div class="pdots" id="pDots"></div>
+  </section>
+
+
+
+  <div class="top-line" id="catalogo">
+    <div class="l">
+      <h2 id="tituloLista">Productos</h2>
+      <small id="contador"></small>
+      <button type="button" class="todos" id="btnTodos">✕ Ver todos</button>
+    </div>
+    <select class="sort" id="orden" aria-label="Ordenar productos">
+      <option value="">Recomendados</option>
+      <option value="asc">Menor precio</option>
+      <option value="desc">Mayor precio</option>
+    </select>
+  </div>
+  <div id="productos" class="grid" aria-live="polite">
+    <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+  </div>
+  <section class="descubre" id="descubre" hidden>
+    <h2>Descubre</h2>
+    <div class="mosaic" id="mosaic"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true">
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6"/>
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(90 12 12)"/>
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(180 12 12)"/>
+        <ellipse cx="12" cy="6.2" rx="3.6" ry="4.6" transform="rotate(270 12 12)"/>
+        <path d="M12 13 L14.5 22.5 L13 22.5 L11 14Z"/>
+      </svg><b>TECNO TREBOL</b></div>
+        <p>Catálogo en línea. Escríbenos por WhatsApp para confirmar existencia y precio.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/584244649564" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+          <li><a href="https://wa.me/584244649564?text=Hola%20Tecno%20Trebol%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20delivery" target="_blank" rel="noopener"><i class="fas fa-truck"></i>Delivery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Encuéntranos</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?cid=6273201830718904491&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i>Ubicación de la tienda</a></li>
+          <li><a href="https://beacons.ai/tecnotrebol" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Redes sociales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 Tecno Trebol. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<div id="modalDetalle" role="dialog" aria-modal="true" aria-labelledby="mNombre">
+  <div id="modalBox">
+    <div class="grab"></div>
+    <button class="x" id="btnCerrar" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+    <img id="mFoto" src="" alt="">
+    <div id="mMarca"></div>
+    <h2 id="mNombre"></h2>
+    <p id="mDesc"></p>
+    <div id="mPrecio"></div>
+    <a id="mBtnWhatsapp" class="btn-wa" href="#" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<script>
+// ---------- FIREBASE ----------
+const firebaseConfig = { databaseURL: "https://tecno-trebol-e1656-default-rtdb.firebaseio.com" };
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+let productos = [];
+let catActiva = "";
+// Convierte "$1.234,50", "25$", "Bs 1,200.00" en número (o null si no hay)
+function precioNum(s) {
+  let x = String(s ?? "").replace(/[^\d.,]/g, "");
+  if (!x) return null;
+  const c = x.lastIndexOf(","), d = x.lastIndexOf(".");
+  if (c > -1 && d > -1) x = c > d ? x.replace(/\./g, "").replace(",", ".") : x.replace(/,/g, "");
+  else if (c > -1) x = /,\d{1,2}$/.test(x) ? x.replace(",", ".") : x.replace(/,/g, "");
+  else if (d > -1 && /\.\d{3}$/.test(x) && x.indexOf(".") === d) x = x.replace(".", "");
+  const n = parseFloat(x);
+  return isNaN(n) ? null : n;
+}
+const numeroWhatsapp = "584244649564";
+const $ = id => document.getElementById(id);
+
+// Escapa texto que viene de la base de datos
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => (
+  {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]
+));
+// Para buscar sin importar tildes ni mayúsculas
+const norm = s => String(s ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+const FOTO_VACIA = "data:image/svg+xml;utf8," + encodeURIComponent(
+  "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='#eef2ef'/><text x='50' y='58' font-size='28' text-anchor='middle' fill='#a9b8b0'>?</text></svg>"
+);
+
+// ---------- ESCUCHAR CAMBIOS ----------
+db.ref("productos").orderByChild("posicion").on("value", snapshot => {
+  productos = [];
+  snapshot.forEach(child => { productos.push({ id: child.key, ...child.val() }); });
+  pintarCatCards();
+  buscarProducto();
+}, () => {
+  $("productos").innerHTML =
+    '<div class="empty"><i class="fas fa-wifi"></i><b>No pudimos cargar los productos</b>Revisa tu conexión e intenta de nuevo.</div>';
+});
+
+// ---------- CATEGORÍAS ----------
+const CATS = [
+  { k: "Accesorios",        ic: "fa-plug",               bg: "#f9b4d4" },
+  { k: "Teléfonos",         ic: "fa-mobile-screen-button", bg: "#fbb08a" },
+  { k: "Audio",             ic: "fa-headphones",         bg: "#9fd6f6" },
+  { k: "Otras tecnologías", ic: "fa-microchip",          bg: "#bdee82" }
+];
+const REGLAS = [
+  ["Audio",       /audio|audifon|auricular|bocina|parlante|speaker|jbl|airpod|earbud|headset|microfono|soundbar|karaoke/],
+  ["Accesorios",  /accesorio|cargador|cable|funda|case|estuche|protector|mica|power ?bank|adaptador|soporte|vidrio templado|holder|correa|hub|usb|lapiz|pen drive|memoria/],
+  ["Teléfonos",   /telefon|celular|smartphone|iphone|galaxy|redmi|xiaomi|motorola|moto g|infinix|honor|realme|spark|camon|pova/]
+];
+// Usa el campo "categoria" si existe; si no, la deduce por el nombre
+function categoriaDe(p) {
+  const c = norm(p.categoria);
+  const txt = c || norm((p.nombre || "") + " " + (p.marca || ""));
+  for (const [k, re] of REGLAS) if (re.test(txt)) return k;
+  return "Otras tecnologías";
+}
+function pintarCatCards() {
+  const vis = productos.filter(p => p.visible !== false);
+  $("catcards").innerHTML = CATS.map(c => {
+    const ej = vis.find(p => p.foto && categoriaDe(p) === c.k);
+    const tile = ej
+      ? `<img src="${esc(ej.foto)}" alt="" loading="lazy" onerror="this.remove()">`
+      : `<i class="fas ${c.ic}" aria-hidden="true"></i>`;
+    return `<button type="button" class="catcard ${c.k === catActiva ? "on" : ""}" data-cat="${esc(c.k)}">
+      <span>${esc(c.k)}</span><div class="tile" style="background:${c.bg}">${tile}</div></button>`;
+  }).join("");
+}
+$("catcards").addEventListener("click", e => {
+  const b = e.target.closest("[data-cat]");
+  if (!b) return;
+  catActiva = catActiva === b.dataset.cat ? "" : b.dataset.cat;
+  pintarCatCards();
+  buscarProducto();
+  if (catActiva) $("catalogo").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+$("btnTodos").addEventListener("click", () => { catActiva = ""; pintarCatCards(); buscarProducto(); });
+
+// ---------- MOSTRAR ----------
+// Pone "Descubre" debajo de la tercera fila de productos (según las columnas que haya en pantalla)
+function colocarDescubre() {
+  const g = $("productos"), d = $("descubre");
+  const cards = g.querySelectorAll(".card");
+  const cols = getComputedStyle(g).gridTemplateColumns.split(" ").length || 1;
+  const n = cols * 3;
+  if (cards.length > n) cards[n - 1].after(d); else g.appendChild(d);
+}
+let _rz;
+window.addEventListener("resize", () => { clearTimeout(_rz); _rz = setTimeout(colocarDescubre, 150); });
+
+function mostrar(lista, hayFiltro) {
+  $("productos").after($("descubre")); // lo saca de la lista antes de repintarla
+  const visibles = lista.filter(p => p.visible !== false);
+  $("contador").textContent = visibles.length ? visibles.length + (visibles.length === 1 ? " producto" : " productos") : "";
+  $("tituloLista").textContent = catActiva || "Productos";
+  $("btnTodos").classList.toggle("show", !!catActiva);
+
+  if (!visibles.length) {
+    $("productos").innerHTML = hayFiltro
+      ? '<div class="empty"><i class="fas fa-search"></i><b>No encontramos ese producto</b>Prueba con otra palabra o escríbenos por WhatsApp.</div>'
+      : '<div class="empty"><i class="fas fa-box-open"></i><b>Aún no hay productos</b>Vuelve pronto.</div>';
+    colocarDescubre();
+    return;
+  }
+
+  $("productos").innerHTML = visibles.map(p => {
+    const msg = encodeURIComponent("Hola Tecno Trebol, me interesa obtener información sobre: " + p.nombre);
+    return `
+    <article class="card" data-id="${esc(p.id)}">
+      ${p.oferta ? '<span class="badge">Oferta</span>' : ''}
+      <div class="pic"><img src="${esc(p.foto)}" alt="${esc(p.nombre)}" loading="lazy" onerror="this.onerror=null;this.src='${FOTO_VACIA}'"></div>
+      <div class="info">
+        <div class="marca">${esc(p.marca)}</div>
+        <h3>${esc(p.nombre)}</h3>
+        <div class="price">${esc(p.precio)}</div>
+        <a class="btn-wa" href="https://wa.me/${numeroWhatsapp}?text=${msg}" target="_blank" rel="noopener" data-wa>
+          <i class="fab fa-whatsapp"></i> Consultar
+        </a>
+      </div>
+    </article>`;
+  }).join("");
+  colocarDescubre();
+}
+
+$("productos").addEventListener("click", e => {
+  if (e.target.closest("[data-wa]")) return;
+  const card = e.target.closest(".card");
+  if (card) ver(card.dataset.id);
+});
+
+// ---------- BUSCADOR ----------
+function buscarProducto() {
+  const q = norm($("busquedaInput").value.trim());
+  $("searchBox").classList.toggle("has-text", q.length > 0);
+  let lista = productos.filter(p =>
+    (!catActiva || categoriaDe(p) === catActiva) &&
+    norm(p.nombre + " " + (p.marca || "")).includes(q)
+  );
+  const o = $("orden").value;
+  if (o) {
+    lista = lista.slice().sort((a, b) => {
+      const x = precioNum(a.precio), y = precioNum(b.precio);
+      if (x === null && y === null) return 0;
+      if (x === null) return 1;
+      if (y === null) return -1;
+      return o === "asc" ? x - y : y - x;
+    });
+  }
+  mostrar(lista, q.length > 0 || !!catActiva);
+}
+$("busquedaInput").addEventListener("input", buscarProducto);
+$("orden").addEventListener("change", buscarProducto);
+window.addEventListener("scroll", () => document.querySelector("header").classList.toggle("raised", scrollY > 8), { passive: true });
+$("btnLimpiar").addEventListener("click", () => {
+  $("busquedaInput").value = "";
+  buscarProducto();
+  $("busquedaInput").focus();
+});
+
+// ---------- PROMOCIONES ----------
+// Para cambiar las promos SIN tocar Firebase, edita esta lista.
+// Campos: kicker (texto pequeño), titulo, imagen (opcional, URL), color (opcional), fin (opcional, "AAAA-MM-DD"), link (opcional)
+// Si en Firebase creas el nodo "promos" con esos mismos campos, se usa ese en lugar de esta lista.
+const PROMOS_LOCALES = [
+  { kicker: "Promo de la semana", titulo: "Todo en tecnología", color: "linear-gradient(135deg,#f472b6,#fb7185)", fin: null },
+  { kicker: "Delivery", titulo: "Te lo llevamos", color: "linear-gradient(135deg,#6d5bd0,#a78bfa)", fin: null,
+    link: "https://wa.me/" + numeroWhatsapp + "?text=" + encodeURIComponent("Hola Tecno Trebol, quiero información sobre el delivery") },
+  { kicker: "Visítanos", titulo: "Ven a la tienda", color: "linear-gradient(135deg,#0284c7,#22d3ee)", fin: null,
+    link: "https://maps.google.com/?cid=6273201830718904491&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" }
+];
+let promosFb = null;
+
+function finMs(f) {
+  if (!f) return null;
+  if (typeof f === "number") return f;
+  const s = String(f).trim();
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(s + "T23:59:59") : new Date(s);
+  return isNaN(d) ? null : d.getTime();
+}
+function textoFin(ms) {
+  const diff = ms - Date.now();
+  if (diff <= 0) return null;
+  const d = Math.floor(diff / 86400000);
+  return d >= 1 ? "Termina en " + d + "d" : "Termina en " + Math.max(1, Math.ceil(diff / 3600000)) + "h";
+}
+function pintarPromos() {
+  const base = promosFb && promosFb.length ? promosFb : PROMOS_LOCALES;
+  const lista = base.filter(p => p.visible !== false).map(p => {
+    const ms = finMs(p.fin);
+    return { p, ms, txt: ms ? textoFin(ms) : "" };
+  }).filter(x => !x.ms || x.txt); // oculta las vencidas
+
+  $("promos").hidden = !lista.length;
+  $("pTrack").innerHTML = lista.map(({ p, txt }) => {
+    const msg = encodeURIComponent("Hola Tecno Trebol, me interesa la promo: " + (p.titulo || ""));
+    const href = p.link || ("https://wa.me/" + numeroWhatsapp + "?text=" + msg);
+    return `<a class="pslide" href="${esc(href)}" target="_blank" rel="noopener" style="${p.color ? "--g:" + esc(p.color) : ""}">
+      ${p.imagen ? `<img src="${esc(p.imagen)}" alt="${esc(p.titulo)}" loading="lazy">` : ""}
+      ${txt ? `<span class="pbadge"><i class="far fa-clock"></i>${esc(txt)}</span>` : ""}
+      ${!p.imagen ? `<span class="pk">${esc(p.kicker)}</span><span class="pt">${esc(p.titulo)}</span>
+      <span class="pbtn">Ver más <i class="fas fa-arrow-right"></i></span>` : ""}
+    </a>`;
+  }).join("");
+  $("pDots").innerHTML = lista.length > 1 ? lista.map((_, i) => `<i class="${i ? "" : "on"}"></i>`).join("") : "";
+  $("pTrack").scrollLeft = 0;
+}
+function pasoPromo() {
+  const s = $("pTrack").querySelector(".pslide");
+  return s ? s.getBoundingClientRect().width + 12 : 300;
+}
+$("pPrev").addEventListener("click", () => $("pTrack").scrollBy({ left: -pasoPromo(), behavior: "smooth" }));
+$("pNext").addEventListener("click", () => $("pTrack").scrollBy({ left: pasoPromo(), behavior: "smooth" }));
+$("pTrack").addEventListener("scroll", () => {
+  const i = Math.round($("pTrack").scrollLeft / pasoPromo());
+  [...$("pDots").children].forEach((d, k) => d.classList.toggle("on", k === i));
+}, { passive: true });
+
+db.ref("promos").on("value", snap => {
+  const arr = [];
+  snap.forEach(c => { arr.push({ id: c.key, ...c.val() }); });
+  arr.sort((a, b) => (a.posicion ?? 999) - (b.posicion ?? 999));
+  promosFb = arr;
+  pintarPromos();
+}, () => { promosFb = null; pintarPromos(); });
+pintarPromos();
+
+// ---------- DESCUBRE ----------
+// Para cambiar los cuadros SIN tocar Firebase, edita esta lista (los primeros 5 forman el mosaico, en este orden:
+// grande, alto, pequeño arriba, pequeño abajo, ancho).
+// Campos: kicker, titulo, imagen (opcional), color (opcional), texto (color del texto, opcional), link (opcional).
+// En "link" puedes poner "cat:Audio" para abrir esa categoría (Accesorios, Teléfonos, Audio, Otras tecnologías) o una URL.
+// Si en Firebase creas el nodo "descubre" con esos campos, se usa ese en lugar de esta lista.
+const DESCUBRE_LOCALES = [
+  { kicker: "Todo el universo", titulo: "Encuentra tu próximo teléfono", color: "linear-gradient(135deg,#0ea5e9,#67e8f9)", link: "cat:Teléfonos" },
+  { kicker: "Suena increíble", titulo: "Audio que se siente", color: "linear-gradient(160deg,#10b981,#6ee7b7)", link: "cat:Audio" },
+  { titulo: "Accesorios", color: "linear-gradient(135deg,#f9a8d4,#fbcfe8)", texto: "#14231c", link: "cat:Accesorios" },
+  { titulo: "Más tecnología", color: "linear-gradient(135deg,#fcd34d,#fbbf24)", texto: "#14231c", link: "cat:Otras tecnologías" },
+  { kicker: "Delivery", titulo: "Pide desde tu casa y te lo llevamos", color: "linear-gradient(100deg,#7c6ae0,#b9a8ff)",
+    link: "https://wa.me/" + numeroWhatsapp + "?text=" + encodeURIComponent("Hola Tecno Trebol, quiero información sobre el delivery") }
+];
+let descubreFb = null;
+
+function pintarDescubre() {
+  const base = descubreFb && descubreFb.length ? descubreFb : DESCUBRE_LOCALES;
+  const lista = base.filter(p => p.visible !== false).slice(0, 5);
+  $("descubre").hidden = !lista.length;
+  $("mosaic").classList.toggle("simple", lista.length < 5);
+  $("mosaic").innerHTML = lista.map((p, i) => {
+    const esCat = String(p.link || "").startsWith("cat:");
+    const msg = encodeURIComponent("Hola Tecno Trebol, me interesa: " + (p.titulo || ""));
+    const href = esCat ? "#catalogo" : (p.link || ("https://wa.me/" + numeroWhatsapp + "?text=" + msg));
+    const attrs = esCat ? `data-cat="${esc(p.link.slice(4))}"` : `target="_blank" rel="noopener"`;
+    const estilo = (p.color ? "--g:" + esc(p.color) + ";" : "") + (p.texto ? "--tc:" + esc(p.texto) : "");
+    return `<a class="dt dt-${i}" href="${esc(href)}" ${attrs} style="${estilo}">
+      ${p.imagen ? `<img src="${esc(p.imagen)}" alt="${esc(p.titulo)}" loading="lazy">` : ""}
+      ${!p.imagen ? `${p.kicker ? `<span class="dk">${esc(p.kicker)}</span>` : ""}<span class="dtt">${esc(p.titulo)}</span>` : ""}
+    </a>`;
+  }).join("");
+}
+$("mosaic").addEventListener("click", e => {
+  const a = e.target.closest("a[data-cat]");
+  if (!a) return;
+  e.preventDefault();
+  catActiva = a.dataset.cat;
+  pintarCatCards();
+  buscarProducto();
+  $("catalogo").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+db.ref("descubre").on("value", snap => {
+  const arr = [];
+  snap.forEach(c => { arr.push({ id: c.key, ...c.val() }); });
+  arr.sort((a, b) => (a.posicion ?? 999) - (b.posicion ?? 999));
+  descubreFb = arr;
+  pintarDescubre();
+}, () => { descubreFb = null; pintarDescubre(); });
+pintarDescubre();
+
+// ---------- DETALLE ----------
+function ver(id) {
+  const p = productos.find(i => i.id === id);
+  if (!p) return;
+  const msg = encodeURIComponent("Hola Tecno Trebol, quiero más información sobre el producto: " + p.nombre);
+  $("mMarca").textContent = p.marca || "";
+  $("mNombre").textContent = p.nombre;
+  $("mFoto").src = p.foto || FOTO_VACIA;
+  $("mFoto").alt = p.nombre || "";
+  $("mDesc").textContent = p.descripcion || "";
+  $("mDesc").style.display = p.descripcion ? "block" : "none";
+  $("mPrecio").textContent = p.precio;
+  $("mBtnWhatsapp").href = `https://wa.me/${numeroWhatsapp}?text=${msg}`;
+  $("modalDetalle").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function cerrar() {
+  $("modalDetalle").classList.remove("open");
+  document.body.style.overflow = "";
+}
+$("btnCerrar").addEventListener("click", cerrar);
+$("modalDetalle").addEventListener("click", e => { if (e.target === $("modalDetalle")) cerrar(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") cerrar(); });
+
+// PROTECCIÓN EXTRA: bloquea clic derecho para dificultar copia rápida
+document.addEventListener("contextmenu", e => e.preventDefault());
+</script>
+</body>
+</html>
